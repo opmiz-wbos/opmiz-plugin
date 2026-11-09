@@ -1,0 +1,12 @@
+{
+  "name": "opmiz",
+  "owner": { "name": "Opmiz", "url": "https://www.opmiz.com" },
+  "description": "The Opmiz plugin: the Opmiz connector with skills for website, shop and content work.",
+  "plugins": [
+    {
+      "name": "opmiz",
+      "source": "./opmiz",
+      "description": "Build, change and publish Opmiz websites, shops and content: the Opmiz connector plus skills for working safely, refreshing a homepage and publishing a post."
+    }
+  ]
+}

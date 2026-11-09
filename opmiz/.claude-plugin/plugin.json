@@ -1,0 +1,16 @@
+{
+  "name": "opmiz",
+  "displayName": "Opmiz",
+  "version": "1.0.0",
+  "description": "Build, change and publish Opmiz websites, shops and content: the Opmiz connector plus skills for working safely, refreshing a homepage and publishing a post.",
+  "author": { "name": "Opmiz", "url": "https://www.opmiz.com" },
+  "homepage": "https://docs.opmiz.com",
+  "repository": "https://github.com/opmiz-wbos/opmiz-plugin",
+  "license": "MIT",
+  "keywords": ["opmiz", "website", "cms", "ecommerce", "mcp"],
+  "icon": "./assets/icon.png",
+  "documentationUrl": "https://docs.opmiz.com",
+  "supportUrl": "https://www.opmiz.com/contact",
+  "privacyPolicyUrl": "https://www.opmiz.com/c/privacy",
+  "termsOfServiceUrl": "https://www.opmiz.com/c/terms"
+}
