@@ -35,7 +35,7 @@ Ask which to do. Do not change anything before the person picks.
 - Keep each `action_id`: `undo_site_change` undoes one batch if the person does not like it.
 
 ## 4. Show and publish
-1. Show the final desktop and mobile screenshots and list what changed.
+1. Show the final desktop and mobile screenshots and list what changed. Offer `get_preview_link` so they can try the draft on their own phone.
 2. `preview_site_publish`, and show the person the change list it returns (and any logo or business rename waiting).
 3. Only when they say yes: `publish_site` with `org_id` and the token (nothing else). Tell them the live address.
 

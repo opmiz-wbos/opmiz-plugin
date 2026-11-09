@@ -1,6 +1,6 @@
 ---
 name: opmiz-site-work
-description: How to work on an Opmiz business with the opmiz tools safely - pick the business, read before you change, send exact design ops, preview and ask before anything goes live. Use whenever the person asks to change, check or publish their Opmiz website, pages, Library, content or logo.
+description: How to work on an Opmiz business with the opmiz tools safely - pick the business, read before you change, send exact design ops, preview and ask before anything goes live. Use whenever the person asks to change, check or publish their Opmiz website, pages, Library, content, products, stock or logo.
 ---
 
 # Working on an Opmiz site
@@ -14,10 +14,15 @@ The `opmiz` tools act on the person's real business. Nothing a visitor can see c
 
 ## Design changes (draft only)
 - `apply_site_ops` with the `revision` you read, 1 to 50 exact ops, and a short `note` the merchant will see in the builder history. You choose every op; Opmiz runs no AI here.
+- A new design or a big restyle: set the theme first (`set_theme`), then the shared styles (`set_token` changes one everywhere, `add_style` adds one), then build each section in one `add_section` op: a layout from `get_element_catalogue`'s `section_layouts` and its items pointed at those styles. `add_element` and `set_style_links` change one element. Use `set_style` only for what one node alone needs.
+- More than 50 ops: write them to a file from a script, send it to the link `create_ops_link` gives, then `preview_site_ops` and `apply_site_ops` with its `ops_file_id` (up to 1,000 ops, one change). Do not print the ops to read them back.
+- A contact or enquiry form: `add_form` with its fields inside a section; `update_form` changes it (send the whole field list, each kept field with its `name`). It takes responses only once the site is published; they reach the Inbox.
 - Check with `preview_site_ops` first when unsure, and look with `get_page_screenshot` (desktop and mobile) after a change.
 - On `REVISION_CONFLICT`, read again and redo the change on the new revision. Do not resend blindly.
 - `undo_site_change` with the `action_id` undoes one batch.
 - A classic-theme site: `get_site` says so. `open_in_builder` copies it into a builder draft (nothing live changes). A new account that was never published: `start_builder_site`.
+
+To let the person look at the draft themselves, on their phone, give them `get_preview_link`'s link: anyone with it sees the draft for 2 hours, so it goes only to them.
 
 ## Anything that goes live: preview, show, ask, then save
 These tools change the live site, so each has a preview that returns a single-use `publish_token`:
@@ -27,10 +32,12 @@ These tools change the live site, so each has a preview that returns a single-us
 | Publish the site design | `preview_site_publish` | `publish_site` |
 | Publish or unpublish an item, or everything from an import | `preview_item_publish` | `publish_item` / `unpublish_item` |
 | Page name, address, search text | `preview_page_settings` | `save_page_settings` |
-| Contact, legal and social details | `preview_business_details` | `save_business_details` |
+| Contact, legal and social details, Pay on delivery | `preview_business_details` | `save_business_details` |
 | Terms and Privacy | `preview_policies` | `save_policies` |
 | Menu, featured collections, product sections | `preview_store_lists` | `save_store_lists` |
 | A collection's products and order | `preview_collection_order` | `save_collection_order` |
+| A product's names, prices, texts, images or variants (not stock) | `preview_product_update` | `save_product_update` |
+| Stock, with a reason (received, damaged, a count…) | `preview_stock_adjustment` | `save_stock_adjustment` |
 | A product's category field values | `preview_product_fields` | `save_product_fields` |
 | Take products off the shop, or restore them | `preview_product_archive` | `archive_products` |
 | A Library text, link, image or list | `preview_library_change` | `save_library_change` |

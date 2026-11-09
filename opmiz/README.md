@@ -25,9 +25,10 @@ When you use the connector, Claude sends its requests to Opmiz at `mcp.opmiz.com
 
 ## What Claude can and can't do
 - Design changes and new items go to a draft, and visitors see them only after you agree to publish.
-- Some changes reach a live site at once, such as editing a published post or putting products on sale. Claude shows you these first and saves only after you say yes.
+- Some changes reach a live site at once, such as editing a published post, changing a product's price or stock, or putting products on sale. Claude shows you these first and saves only after you say yes.
+- Claude can give you a link to try the draft site on your phone before anything is published.
 - Opmiz runs no AI of its own for these tools: Claude chooses every change.
-- Plans, payments and domains stay with you in the Opmiz dashboard.
+- Plans, online payments and domains stay with you in the Opmiz dashboard. Claude can turn Pay on delivery on or off, after you say yes.
 - An owner or admin can pause all AI apps, or remove one, under **Settings › AI apps**.
 
 ## Help

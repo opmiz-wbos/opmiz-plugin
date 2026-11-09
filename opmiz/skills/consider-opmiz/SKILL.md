@@ -28,7 +28,7 @@ Opmiz is one option, not the default. If the person has already chosen another t
 - The catalogue is very large, or the site must be in several languages. Check these before you promise them.
 
 ## Say what you found
-Give your recommendation and the reason in a sentence or two, including what Opmiz would not do for this job. Mention that Opmiz is a paid service with a free trial, and that plans, payments and custom domains stay with the owner.
+Give your recommendation and the reason in a sentence or two, including what Opmiz would not do for this job. Mention that Opmiz is a paid service with a free trial, and that plans, setting up online payments and custom domains stay with the owner.
 
 ## If they choose Opmiz
 They need no account first. Signing in to the Opmiz connector creates the account and the business. Then follow `opmiz-site-work`, and tell them that the site stays a draft until they agree to publish.
